@@ -4,6 +4,8 @@ https://visualstudio.microsoft.com/vs/community/
 # Driver to esp8266
 https://platformio.org/install/ide?install=vscode
 
+reboot
+
 -------------------------------------------------------------------------------------------------
 #1 Quick start
 http://docs.platformio.org/en/latest/quickstart.html
