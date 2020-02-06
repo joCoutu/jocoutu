@@ -12,6 +12,7 @@ reboot
 ---
 # Quick start
 http://docs.platformio.org/en/latest/quickstart.html
+
 Icon alien - quick access - PIO Home - Open - New project - Board NodeMCU 1.0 ....
 
 #### src/main.cpp
