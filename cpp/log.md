@@ -1,21 +1,21 @@
-# esp8266
+##### esp8266
 https://m.aliexpress.com/wholesale/nodemcu-v3.html?searchType=mainSearch&keywords=nodemcu-v3&shadingAction=&channel=direct
 
-# Text editor
+##### Text editor
 https://visualstudio.microsoft.com/vs/community/
 
-# Driver to esp8266
+##### Driver to esp8266
 https://platformio.org/install/ide?install=vscode
 
 reboot
 
--------------------------------------------------------------------------------------------------
-#1 Quick start
+---
+# Quick start
 http://docs.platformio.org/en/latest/quickstart.html
-
 Icon alien - quick access - PIO Home - Open - New project - Board NodeMCU 1.0 ....
 
-################ src/main.cpp #################################
+#### src/main.cpp
+```cpp
 #include <Arduino.h>
 
 void setup() {
@@ -26,23 +26,25 @@ void loop() {
   Serial.print("loop!!!!!!!!");
   delay(1000);
 }
-#################################################################
+```
 
 Icon alien - quick access - Miscellaneous - New terminal
-	platformio
-	platformio device list
-	# connect esp8266 to your computer
-	platformio device list
-	platformio run --target upload --upload-port COM6
-		blue light flash when you writing in the esp8266
-	platformio device monitor
-		you can read "loop!!!!!!!!" each seconde
+```sh
+platformio
+platformio device list
+# connect esp8266 to your computer
+platformio device list
+platformio run --target upload --upload-port COM6
+# blue light flash when you writing in the esp8266
+platformio device monitor
+# you can read "loop!!!!!!!!" each seconde
+```
 
--------------------------------------------------------------------------------------------------
-#2 web server
+# web server
 https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples
 
-################ src/main.cpp #################################
+#### src/main.cpp
+```cpp
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
@@ -71,9 +73,10 @@ void setup(void) {
 void loop(void) {
   server.handleClient();
 }
-##############################################################
+````
 
-################ src/index.h #################################
+#### src/index.h
+```cpp
 const char *mainPage = R""""(
 <!DOCTYPE html>
 <html lang="en">
@@ -89,8 +92,8 @@ const char *mainPage = R""""(
 </body>
 </html>
 )"""";
-##############################################################
+````
 
-#3 add others libraries
+# add others libraries
 Icon alien - quick access - PIO Home - Open - Libraries
-	make empty search for most popular libraries
+  - make empty search for most popular libraries
