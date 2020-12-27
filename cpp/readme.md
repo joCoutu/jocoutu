@@ -1,21 +1,27 @@
 ##### esp8266
+
 https://m.aliexpress.com/wholesale/nodemcu-v3.html?searchType=mainSearch&keywords=nodemcu-v3&shadingAction=&channel=direct
 
 ##### Text editor
+
 https://visualstudio.microsoft.com/vs/community/
 
 ##### Driver to esp8266
+
 https://platformio.org/install/ide?install=vscode
 
 reboot
 
 ---
+
 # Quick start
+
 http://docs.platformio.org/en/latest/quickstart.html
 
 Icon alien - quick access - PIO Home - Open - New project - Board NodeMCU 1.0 ....
 
 #### src/main.cpp
+
 ```cpp
 #include <Arduino.h>
 
@@ -30,6 +36,7 @@ void loop() {
 ```
 
 Icon alien - quick access - Miscellaneous - New terminal
+
 ```sh
 platformio
 platformio device list
@@ -42,9 +49,11 @@ platformio device monitor
 ```
 
 # web server
+
 https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples
 
 #### src/main.cpp
+
 ```cpp
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
@@ -74,9 +83,10 @@ void setup(void) {
 void loop(void) {
   server.handleClient();
 }
-````
+```
 
 #### src/index.h
+
 ```cpp
 const char *mainPage = R""""(
 <!DOCTYPE html>
@@ -93,8 +103,10 @@ const char *mainPage = R""""(
 </body>
 </html>
 )"""";
-````
+```
 
 # add others libraries
+
 Icon alien - quick access - PIO Home - Open - Libraries
-  - make empty search for most popular libraries
+
+- make empty search for most popular libraries
